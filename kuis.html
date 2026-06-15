@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancasila Digital - Kuis Interaktif</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <h2>Pancasila Digital</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kuis.html" class="active">Kuis Interaktif</a></li>
+            <li><a href="kesimpulan.html">Kesimpulan</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="quiz-section" class="quiz-container">
+    <div class="quiz-box">
+        <h2>💡 Uji Pemahaman: Integritas & Pancasila</h2>
+        <p class="quiz-subtitle">Evaluasi pemahamanmu mengenai nilai moral, etika digital, dan karakter anti-koruptif.</p>
+        
+        <div id="question-container">
+            <div class="question-number" id="q-num">Pertanyaan 1 dari 7</div>
+            <div class="question-text" id="q-text">Loading pertanyaan...</div>
+            <div class="options-container" id="options-box">
+                </div>
+            <div id="feedback-box" class="feedback-msg" style="display: none;"></div>
+        </div>
+
+        <div id="result-container" class="result-box" style="display: none;">
+            <h3>📊 Hasil Akhir Kuis</h3>
+            <div class="score-circle">
+                <span id="score-val">0</span>%
+            </div>
+            <p id="result-message"></p>
+            <button class="quiz-btn" onclick="restartQuiz()" style="float: none; margin-top: 15px;">Coba Lagi</button>
+        </div>
+        
+        <div class="quiz-footer" id="quiz-nav">
+            <button class="quiz-btn" id="next-btn" onclick="nextQuestion()" disabled>Lanjut</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pancasila Digital | Website Edukasi Pendidikan Pancasila</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
